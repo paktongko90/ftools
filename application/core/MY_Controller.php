@@ -11,8 +11,8 @@
 	}
 
 	class Admin_Controller extends MY_Controller{
-		protected $header = 'admin/main/header';
-		protected $footer = 'admin/main/footer';
+		protected $header = 'main/header';
+		protected $footer = 'main/footer';
 
 		protected function loadHeader(){
 		$this->load->view($this->header);
