@@ -5,11 +5,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		protected $layout = 'dashboard/';
 
 		public function index(){
-			//if($this->aauth->is_loggedin()){
+			if($this->aauth->is_loggedin()){
 				$this->loadTemplate($this->layout.'index');
-			//}else{
-			//	$this->sendToLoginPage();
-			//}
+			}else{
+			$this->sendToLoginPage();
+			}
 		}
 	}
  ?>

@@ -26,7 +26,7 @@
 		}
 
 		protected function sendToLoginPage(){
-			redirect('admin/login');
+			redirect('login');
 		}
 
 		protected function getCurrentUserID(){

@@ -12,7 +12,8 @@
 
   <div class="grid">
 
-    <form action="/" method="post" class="form login">
+
+    <?php echo form_open('User/action',['role' => 'form','id' => 'login-form']); ?>
 
       <header class="login__header">
         <h3 class="login__title">Login</h3>
@@ -21,7 +22,7 @@
       <div class="login__body">
 
         <div class="form__field">
-          <input type="email" placeholder="Email" required>
+          <input type="username" placeholder="Email" required>
         </div>
 
         <div class="form__field">
@@ -32,11 +33,9 @@
 
       <footer class="login__footer">
         <input type="submit" value="Login">
-
-        <p><span class="icon icon--info">?</span><a href="#">Forgot Password</a></p>
       </footer>
 
-    </form>
+    <?php echo form_close(); ?>
 
   </div>
 
